@@ -1,5 +1,6 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$black-border: 1px solid black;
 
 body {
   font: 100% $font-stack;
@@ -7,11 +8,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
   nav.navigation {
     display: flex;
     a {
       flex: 1;
-      border: 1px solid blue;
+      border: $black-border;
       text-decoration: none;
       padding: 0.5em;
       font-weight: bold;
@@ -27,15 +29,22 @@ body {
       justify-content: center;
       div.mini {
         flex: 1;
-        border: 1px solid black;
+        padding: 1em;
+        border: $black-border;
       }
       div.mini_2 {
         flex: 2;
-        border: 1px solid black;
+        padding: 1em;
+        border: $black-border;
       }
     }
   }
   footer {
-
+    display: flex;
+    border-top: $black-border;
+    background-color: silver;
+    p {
+      flex: 1;
+    }
   }
 }
