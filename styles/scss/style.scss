@@ -4,6 +4,19 @@ $primary-color: #333;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  nav.navigation {
+    display: flex;
+    padding: 1em;
+    a {
+      flex: 1;
+      border: 1px solid blue;
+      margin: auto;
+      text-decoration: none;
+      padding: 0.5em;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
   div.content {
     display: flex;
     flex-flow: row wrap;
